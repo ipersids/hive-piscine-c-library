@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   By: Julia Persidskaia                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 18:23:21 by ipersids          #+#    #+#             */
 /*   Updated: 2024/08/14 19:42:56 by ipersids         ###   ########.fr       */
@@ -12,6 +12,18 @@
 
 #include "libpiscine.h"
 
+/**
+ * Creates an array of integers within a specified range.
+ *
+ * This function allocates memory for an array of integers containing all
+ * values from `min` (inclusive) to `max` (exclusive). The array is 
+ * dynamically allocated and must be freed by the caller.
+ *
+ * @param min The starting value (inclusive) of the range.
+ * @param max The ending value (exclusive) of the range.
+ * @return    A pointer to the first element of the integer array, or NULL 
+ *            if `min` is greater than or equal to `max`, or if memory allocation fails.
+ */
 int	*ft_range(int min, int max)
 {
 	int	size;

@@ -12,6 +12,17 @@
 
 #include "libpiscine.h"
 
+/**
+ * Sorts an array of integers in ascending order.
+ *
+ * This function sorts the elements of an integer array `tab` in ascending 
+ * order using a simple sorting algorithm (selection sort). It iterates over 
+ * each element, comparing it with subsequent elements and swapping them if 
+ * they are out of order.
+ *
+ * @param tab   A pointer to the array of integers to be sorted.
+ * @param size  The number of elements in the array.
+ */
 void	ft_sort_int_tab(int *tab, int size)
 {
 	int	cnt;

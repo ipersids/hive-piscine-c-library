@@ -12,6 +12,16 @@
 
 #include "libpiscine.h"
 
+/**
+ * Calculates the length of a string.
+ *
+ * This function computes the number of characters in the given string `str` 
+ * until it encounters the null terminator (`'\0'`). The length does not include 
+ * the null terminator.
+ *
+ * @param str  The string whose length is to be determined.
+ * @return     The length of the string.
+ */
 int	ft_strlen(char *str)
 {
 	char	*tmp;

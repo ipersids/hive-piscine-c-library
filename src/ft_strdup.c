@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Julia Persidskaia					        +#+  +:+       +#+        */
+/*   By: Julia Persidskaia                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 17:59:45 by ipersids          #+#    #+#             */
 /*   Updated: 2024/08/14 18:21:33 by ipersids         ###   ########.fr       */
@@ -12,6 +12,17 @@
 
 #include "libpiscine.h"
 
+/**
+ * Duplicates a string.
+ *
+ * This function allocates memory and creates a duplicate of the string `src`.
+ * The duplicate includes the null terminator. If memory allocation fails, 
+ * it returns `NULL`.
+ *
+ * @param src The source string to duplicate.
+ * @return    A pointer to the newly allocated duplicate string, or `NULL` if 
+ *            memory allocation fails.
+ */
 char	*ft_strdup(char *src)
 {
 	char	*res;

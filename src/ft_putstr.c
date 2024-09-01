@@ -12,6 +12,15 @@
 
 #include "libpiscine.h"
 
+/**
+ * Outputs a string to the standard output.
+ *
+ * This function prints the given null-terminated string `str` to the standard
+ * output. It iterates through each character of the string and writes it to 
+ * the output one character at a time.
+ *
+ * @param str The string to print.
+ */
 void	ft_putstr(char *str)
 {
 	char	*tmp;
