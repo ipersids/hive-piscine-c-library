@@ -1,5 +1,5 @@
 # Static C library: libpiscine
-This project was created using functions in the C programming language that I developed during the selection process, known as the Piscine, at [Hive Helsinki]((https://www.hive.fi/en/studies)). Hive is part of the 42 School Network, which emphasizes peer-to-peer learning and the development of skills in creative problem-solving, teamwork, autonomy, responsibility, logic, and rigor. After completing the Piscine, I was selected for the core educational program.
+This project was created using functions in the C programming language that I developed during the selection process, known as the Piscine, at [Hive Helsinki](https://www.hive.fi/en/studies). Hive is part of the 42 School Network, which emphasizes peer-to-peer learning and the development of skills in creative problem-solving, teamwork, autonomy, responsibility, logic, and rigor. After completing the Piscine, I was selected for the core educational program.
 
 ## Functions
 This static library includes two standard C libraries: <unistd.h>, which provides the write() function, and <stdlib.h>, which is used for memory management with malloc() and free(). By including the header file #include "libpiscine.h" in your project, you will also have access to its functions.
