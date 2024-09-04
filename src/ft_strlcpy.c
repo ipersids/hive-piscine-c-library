@@ -26,24 +26,20 @@
  */
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	char	*d;
-	char	*s;
+	unsigned int src_len;
+    unsigned int i;
 
-	d = dest;
-	s = src;
-	while (*s && *d)
-	{
-		*d = *s;
-		d++;
-		s++;
-	}
-	if (d < (dest + size))
-		*d = '\0';
-	else
-		dest[size] = '\0';
-	while (*s)
-	{
-		s++;
-	}
-	return ((unsigned int)(s - src));
+	src_len = 0;
+	i = 0;
+    while (src[src_len] != '\0')
+        src_len++;
+    if (size == 0)
+        return src_len;
+    while (src[i] != '\0' && i < size - 1)
+    {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0';
+    return src_len;
 }

@@ -126,7 +126,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	char	*res;
 	int		len;
 
-	if (size == 0)
+	if (size == 0 || !sep)
 	{
 		res = empty_str();
 		return (res);
